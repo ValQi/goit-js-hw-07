@@ -1,7 +1,6 @@
 import { galleryItems } from './gallery-items.js';
-console.log(galleryItems);
-
 // Change code below this line
+
 const gallery = document.querySelector('.gallery');
 const items = [];
 
@@ -18,7 +17,7 @@ galleryItems.forEach(element => {
 	galleryLink.append(galleryImage)
 	items.push(galleryLink)
 });
-gallery.append(...items)
+gallery.append(...items);
 
 new SimpleLightbox('.gallery a', {
 	captionDelay: 250
